@@ -1,30 +1,34 @@
 {
-  "name": "parcel-project-template",
-  "version": "2.0.0",
-  "description": "",
-  "homepage": "https://kunirvik.github.io/lesson",
+  "name": "lesson",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /lesson/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
-  },
-  "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
-  },
-  "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "dev": "vite",
+    "build": "vite build --base=/lesson/",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-reporter-clean-dist": "^1.0.4",
-    "posthtml-include": "^1.7.4"
+    "glob": "^8.1.0",
+    "vite": "^4.5.3"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "gsap": "^3.12.5",
+    "simplelightbox": "^2.14.3",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
+  },
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunirvik/lesson.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kunirvik/lesson/issues"
+  },
+  "homepage": "https://github.com/kunirvik/lesson#readme",
+  "description": ""
 }
